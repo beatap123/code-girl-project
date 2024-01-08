@@ -1,0 +1,404 @@
+body {
+    font-family: "Noto Sans Display";
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .menu-item {
+    display: inline; /* wyświetlanie obok siebie, liniowo */
+    margin-left: 20px; /* odstęp z lewej */
+  }
+  
+  .menu-link {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+  }
+  .menu-link:hover{
+    opacity: 0.7;
+  }
+  
+  .header-heading {
+    font-size: 74px;
+    text-align: center;
+    font-family: "DynaPuff";
+    padding-top: 100px;
+    color: white;
+    margin-bottom: 0;
+  }
+  
+  .header-text {
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  
+  .header-link {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:white;
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 4px; /*zaokrąglenie rogów*/
+    border: 2px solid white;
+    background: transparent;
+    transition: 500ms;
+
+  }
+  .header-link:hover{
+    background: white;
+    color:black;
+  }
+  
+  .header {
+    background: #cad2c5;
+    padding-top: 50px;
+    padding-bottom: 220px;
+    background: url(https://c0.wallpaperflare.com/preview/361/754/406/nature-sunset-mountains-unfiltered.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .about-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .about-image-wrapper {
+    width: 40%;
+  }
+  
+  .about-image {
+    width: 100%;
+  }
+  
+  .about-content {
+    width: 50%;
+  }
+  
+  .about-heading {
+    font-size: 40px;
+    font-family: "DynaPuff";
+  }
+  
+  .about-text {
+    font-size: 24px;
+  }
+  
+  .hobby-section {
+    background-image: linear-gradient(to right top, #207420, #476806, #5b5b00, #664e07, #6b4215);
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  
+  .hobby-heading {
+    font-size: 40px;
+    font-family: "DynaPuff";
+    color: #fff;
+    text-align: center;
+  }
+  .hobby-item{
+    text-align: center;
+  }
+  
+  .hobby-list {
+    margin-top: 60px;
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hobby-item {
+    width: 20%;
+  }
+  
+  .hobby-name {
+    color: #fff;
+    text-align: center;
+  }
+  
+  .hobby-text {
+    color: #fff;
+    text-align: center;
+  }
+  
+  .images-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background:white;
+  }
+  
+  .images-heading {
+    font-size: 40px;
+    font-family: "DynaPuff";
+    text-align: center;
+  }
+  
+  .images-text {
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .images-container {
+    margin-top: 80px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* <figure> */
+  .image-wrapper {
+    width: 30%;
+    margin: 0;
+  }
+  
+  /* <img> */
+  .image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .quote-section {
+    background: #cad2c5;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .quote {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .quote-text {
+    font-size: 27px;
+    font-style: italic;
+  }
+  .quote-icon{
+    max-width: 50px;
+    margin-left: 70px;
+  }
+  .quote-author{
+    font-size: 19px;
+  }
+  
+  .contact-section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background: white;
+  }
+  
+  .contact-heading {
+    font-size: 40px;
+    font-family: "DynaPuff";
+    text-align: center;
+  }
+  
+  .form {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+  }
+  .form-item{
+    display:flex;
+    flex-direction: column;
+    gap:12px;
+  }
+  .label{
+    font-size: 20px;
+    /* border: 1px solid black;*/
+  }
+
+  .input{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .form-button {
+    background-image: linear-gradient(to right top, #207420, #476806, #5b5b00, #664e07, #6b4215);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 4px;
+    color: white;
+    transition: 500ms;
+  }
+  .form-button:hover{
+    opacity: 0.5;
+    color:linear-gradient(to right top, #207420, #476806, #5b5b00, #664e07, #6b4215);
+  }
+  
+  .footer {
+    background-image: linear-gradient(to right top, #207420, #476806, #5b5b00, #664e07, #6b4215);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    max-height: 300px;
+  }
+  .footer-text{
+    color:white;
+  }
+  .footer-content {
+    max-width:  1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer-container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .social-links {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .social-item {
+    display: inline;
+    margin-left: 20px;
+  }
+  .button {
+    background: aqua;
+    border: none;
+  }
+  
+/* RWD */
+@media (min-width: 800px) {
+    .menu-button {
+      display: none;
+    }
+}
+@media (max-width: 800px) {
+    
+    .about-section {
+      flex-direction: column;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    .about-image-wrapper {
+      width: 100%;
+    }
+  
+    .about-content {
+      width: 100%;
+    }
+    .hobby-section {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    .hobby-list {
+      flex-direction: column;
+    }
+  
+    .hobby-item {
+      width: 100%;
+    }
+  
+    .images-section {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    .images-container {
+      flex-direction: column;
+    }
+  
+    .image-wrapper {
+      width: 100%;
+    }
+  
+    .quote {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    .form {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    .footer {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    .navbar {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .nav{
+        display:none;
+    }
+    .nav-mobile {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: black;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+      
+    .nav-mobile .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+      
+    .menu-button {
+        position: relative;
+        z-index: 2;
+        background: transparent;
+        border: transparent;
+        color: white;
+    }
+      
+      .menu-button-open {
+        color: #fff;
+      }
+  }
+  
