@@ -5,10 +5,23 @@ function sayHello() {
 }
 
 myButton.addEventListener("click", sayHello);
+
 const button = document.querySelector(".menu-button");
 const nav = document.querySelector(".nav");
 
-function toggleMenu() {
+function mobileMenu() {
+    if (window.innerWidth <= 800) {
+        nav.classList.add("nav-mobile");
+        button.classList.add("menu-button-open");
+        button.innerHTML = "X";
+    } else {
+        nav.classList.remove("nav-mobile");
+        button.classList.remove("menu-button-open");
+        button.innerHTML = "menu";
+    }
+}
+
+/*function toggleMenu() {
   nav.classList.toggle("nav-mobile");
   button.classList.toggle("menu-button-open");
 
@@ -17,6 +30,6 @@ function toggleMenu() {
   } else {
     button.innerHTML = "menu";
   }
-}
+}*/
 
-button.addEventListener("click", toggleMenu);
+button.addEventListener("click", mobileMenu);
