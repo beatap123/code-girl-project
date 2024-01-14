@@ -1,10 +1,10 @@
-/*const myButton = document.querySelector(".button")
+const myButton = document.querySelector(".button")
 
 function sayHello() {
   console.log("No to Hello!")
 }
 
-myButton.addEventListener("click", sayHello);*/
+myButton.addEventListener("click", sayHello);
 const button = document.querySelector(".menu-button");
 const nav = document.querySelector(".nav");
 
