@@ -12,7 +12,7 @@ function toggleMenu() {
   nav.classList.toggle("nav-mobile");
   button.classList.toggle("open");
 
-  if (button.classList.contains("menu-button-open")) {
+  if (button.classList.contains("open")) {
     button.innerHTML = "X";
   } else {
     button.classList.remove("open");
