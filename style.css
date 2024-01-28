@@ -68,8 +68,8 @@ body {
     background: white;
     color:black;
   }
-  
-  .header {
+
+.header {
     background: #cad2c5;
     padding-top: 50px;
     padding-bottom: 220px;
@@ -259,7 +259,7 @@ body {
     color: white;
     transition: 500ms;
   }
-  .form-button:hover{
+.form-button:hover{
     opacity: 0.5;
     color:linear-gradient(to right top, #207420, #476806, #5b5b00, #664e07, #6b4215);
   }
@@ -372,7 +372,7 @@ body {
         display:none;
     }
     .nav-mobile {
-        position: fixed;
+  position: fixed;
         top: 0;
         left: 0;
         background: black;

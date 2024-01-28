@@ -1,0 +1,65 @@
+<canvas id="hero-lightpass" />
+<script>
+    const html = document.documentElement;
+      const canvas = document.getElementById("hero-lightpass");
+      const context = canvas.getContext("2d");
+
+      const frameCount = 15;
+      const currentFrame = index => (
+        `/${index.toString().padStart(4, '0')}.png`
+      )
+
+const preloadImages = () => {
+  for (let i = 1; i < frameCount; i++) {
+    const img = new Image();
+    img.src = currentFrame(i);
+  }
+};
+
+const img = new Image()
+img.src = currentFrame(1);
+canvas.width=1158;
+canvas.height=770;
+img.onload=function(){
+  context.drawImage(img, 0, 0);
+}
+
+const updateImage = index => {
+  img.src = currentFrame(index);
+  context.drawImage(img, 0, 0);
+}
+
+
+window.addEventListener('scroll', () => {  
+  const scrollTop = document.body.scrollTop;
+  const maxScrollTop = document.body.scrollHeight - window.innerHeight;
+  const scrollFraction = scrollTop / maxScrollTop;
+  const frameIndex = Math.min(
+    frameCount - 1,
+    Math.ceil(scrollFraction * frameCount)
+  );
+  requestAnimationFrame(() => updateImage(frameIndex + 1))
+
+});
+
+preloadImages()
+</script>
+<style>
+    html {
+  height: 100vh;
+}
+
+body {
+  height: 500vh;
+  background: #000;
+}
+
+canvas {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100vw;
+  max-height: 100vh;
+}
+</style>
