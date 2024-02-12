@@ -1,5 +1,6 @@
 <html>
 <body>
+  <p id="text">Witajcie na stronie!</p>
   <canvas id="hero-lightpass" />
 </body>
 </html>
@@ -34,6 +35,8 @@ const updateImage = index => {
   img.src = currentFrame(index);
   console.log(img.src)
   context.drawImage(img, 0, 0);
+  const box = document.getElementById('text');
+  const text = document.createTextNode(' tutorial');
 }
 
 
@@ -50,6 +53,7 @@ window.addEventListener('scroll', () => {
 });
 
 preloadImages()
+box.appendChild(text);
 </script>
 <style>
     html {
@@ -57,10 +61,16 @@ preloadImages()
 }
 
 body {
-  height: 600vh;
+  height: 500vh;
   background: #000;
 }
-
+#text {
+  color: white;
+  font-size: 50px;
+  padding-top: 300px;
+  padding-left: 200px;
+  z-index: 9999;
+}
 canvas {
   position: fixed;
   left: 50%;
@@ -68,5 +78,6 @@ canvas {
   transform: translate(-50%, -50%);
   max-width: 100vw;
   max-height: 100vh;
+  z-index: -1;
 }
 </style>
